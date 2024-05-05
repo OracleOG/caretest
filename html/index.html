@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARETEST</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Upload CSV File Containing Patient Information</h1>
+    <p>The file must have the following columns in this order:</p>
+    <ul>
+        <li>pid</li>
+        <li>date_reg</li>
+        <li>name_title</li>
+        <li>name_first</li>
+        <li>name_middle</li>
+        <li>name_last</li>
+        <li>education</li>
+        <li>date_birth</li>
+        <li>civil_status</li>
+        <li>sex</li>
+        <li>ethnic_orig</li>
+        <li>home_town</li>
+        <li>place_birth</li>
+        <li>religion</li>
+        <li>contact_person</li>
+        <li>death_date</li>
+    </ul>
+    <form action="action.php" method="post" enctype="multipart/form-data">
+        <label for="csv_upload">Choose a CSV File:</label><br>
+        <input type="file" id="csv_upload" name="csv_upload"><br>
+        <input type="submit" name="submit" value="Upload File">
+    </form>
+</body>
+</html>
